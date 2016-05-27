@@ -18,7 +18,7 @@ int main()
 			strtok(NULL, " "); // (2) comm  %s
 			strtok(NULL, " "); // (3) state  %c
 			char * s_ppid = strtok(NULL, " "); // (4) ppid  %d
-			pid_t *ppid = atoi(s_ppid);
+			pid_t ppid = atoi(s_ppid);
 			printf("%s\n", s_ppid);
 		}
 		fclose(fp);
